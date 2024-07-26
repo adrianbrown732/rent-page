@@ -1,0 +1,103 @@
+.main {
+  position: relative;
+}
+
+.hero-section {
+  color: white;
+  background-image: linear-gradient(rgb(20 21 24 / 0.6), rgb(20 21 24 / 0.6)),
+    url("./img/homes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: saturate(2);
+}
+
+:is(.header, .header-mobile) {
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.header {
+  margin-block-end: 32px;
+}
+
+.menu-mobile {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.menu-mobile .sign-in {
+  visibility: hidden;
+}
+
+.header-mobile {
+  border-bottom: solid gray thin;
+}
+
+.nav-mobile li {
+  padding: 16px 12px;
+  border-bottom: solid gray thin;
+}
+
+.title {
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.sign-in {
+  font-weight: 500;
+}
+
+.tagline {
+  width: 70%;
+  text-align: center;
+  margin-inline: auto;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-block-end: 16px;
+}
+
+.search-wrapper {
+  display: flex;
+  place-content: center;
+  padding-block-end: 64px;
+}
+
+.icon {
+  width: 32px;
+  aspect-ratio: 1 / 1;
+  fill: rgb(20 68 190);
+}
+
+.signin-section {
+  padding-block: 32px;
+}
+
+.signin-section h2 {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+:is(.signin-section h2, .signin-section p) {
+  margin-block-end: 8px;
+}
+
+.signin-button {
+  margin-block: 16px;
+  font-family: inherit;
+  color: currentColor;
+  font-weight: 700;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: solid thin gray;
+  border-radius: 12px;
+}
+
+.hide {
+  display: none;
+}
