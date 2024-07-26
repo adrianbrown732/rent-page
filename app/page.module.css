@@ -31,6 +31,13 @@
   z-index: 5;
 }
 
+.close-mobile {
+  width: 25px;
+  height: 25px;
+  stroke: black;
+  stroke-width: 8px;
+}
+
 .menu-mobile .sign-in {
   visibility: hidden;
 }
