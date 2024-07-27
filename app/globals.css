@@ -1,3 +1,11 @@
+:root {
+  --background-rgb: 255 255 255;
+  --border-rgb: 219 220 221;
+  --primary-color-rgb: 20 68 200;
+  --primary-muted-rgb: 246 247 253;
+  --primary-text-rgb: 23 24 26;
+}
+
 *,
 *::before,
 *::after {
@@ -7,9 +15,24 @@
 }
 
 body {
-  background-color: white;
+  background-color: rgb(var(--background-rgb));
+  color: rgb(var(--primary-text-rgb));
 }
 
 section {
   text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(var(--primary-text-rgb));
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(var(--primary-color-rgb));
+}
+
+svg {
+  cursor: pointer;
 }

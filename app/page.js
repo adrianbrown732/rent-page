@@ -19,11 +19,11 @@ export default function Home() {
     <main className={styles.main}>
       <NavSectionMobile visible={visible} onIconClick={hideMobileNav} />
       <HeroSectionMobile onIconClick={showMobileNav} />
-      {/* <section className={styles["signin-section"]}>
+      <section className={styles["signin-section"]}>
         <h2>Get home recommendations</h2>
         <p>Sign in for a more personalized experience</p>
         <button className={styles["signin-button"]}>Sign in</button>
-      </section> */}
+      </section>
     </main>
   );
 }
